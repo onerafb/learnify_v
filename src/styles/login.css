@@ -1,0 +1,8 @@
+.forget-login{
+    padding: 0;
+    width: fit-content;
+}
+.new-here{
+    display: flex;
+    gap: 5px;
+}

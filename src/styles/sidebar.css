@@ -1,0 +1,27 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.s-btn {
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 16px;
+}
+.s-btn:hover {
+  background-color: rgb(160, 151, 255);
+  color: rgb(0, 0, 0);
+}
+.sidebarlink {
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 4px;
+  border-bottom: none;
+}
+

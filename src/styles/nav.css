@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Outfit:wght@100;300;400;500;600;700;800;900&family=Pacifico&display=swap");
+
+:root {
+  --btn-clr: #7c75fa;
+  --black: black;
+  --black-feint: rgb(58, 58, 58);
+  --white: rgb(255, 255, 255);
+  --off-white: #ffffff;
+  --disabled: rgb(191, 119, 255);
+  --active: rgb(94, 112, 255);
+}
+.nav-logo {
+  font-family: "Pacifico";
+  font-size: 24px;
+}
+header {
+  background-color: var(--white);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  height: 9vh;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 4px;
+  font-size: 17px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.9rem;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  color: var(--active);
+}
+
+.flex-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.mg-r-15 {
+  margin-right: 25px;
+}
+
+.bars {
+  display: none;
+  cursor: pointer;
+}
+
+.close {
+  display: none;
+}
+
+.icon-two {
+  font-size: 22px;
+}
+
+.white-clr {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1178px) {
+  .bars {
+    display: block;
+  }
+
+  .close {
+    display: block;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+  }
+
+  .nav {
+    position: absolute;
+    background-color: var(--white);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    left: -100%;
+    transform: translateX(-50%);
+    top: 6rem;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    z-index: 999;
+  }
+
+  .nav-active {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  a {
+    font-size: 16px;
+    border-bottom: 0px solid rgb(63, 63, 63);
+  }
+
+  .flex-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mg-r-15 {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}

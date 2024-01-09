@@ -1,0 +1,218 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Gasoek+One&family=Monoton&family=Outfit:wght@100;300;400;500;600;700;800&family=Rammetto+One&display=swap");
+.homesection{
+  width: 100vw;
+  height: fit-content;
+  background-color: rgb(61, 61, 61);
+}
+
+.container-big {
+  --max-width: 1310px;
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
+}
+.text {
+  width: 100%;
+  height: fit-content;
+  background-image: url(https://media2.giphy.com/media/HkEDr0jVekaZO/giphy.gif?cid=790b761…&ct=g&rid=giphy.gif);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Rammetto One", sans-serif;
+}
+.text > h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  height: fit-content;
+  width: fit-content;
+  line-height: 1;
+}
+.text > h2 {
+  font-size: 80px;
+}
+.text > .af::after {
+  content: "by";
+  font-size: 30px;
+}
+.text > h3 {
+  font-size: 50px;
+  text-align: start;
+}
+.left > p {
+  font-size: 19px;
+  width: 50%;
+  margin-top: 60px;
+  color: rgb(255, 255, 255);
+}
+.home-bt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  padding: 15px 25px;
+  background-color: greenyellow;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.home-bt:hover{
+  background-color: aliceblue;
+  color: black;
+}
+
+.right{
+  background-color: tomato;
+}
+.text{
+  margin-top: 120px;
+}
+.even-columns1 {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 1200px) {
+  .even-columns1 {
+    display: grid;
+    gap: 0.4rem;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .text > h2 {
+    font-size: calc(-13.71429px + 14.28571vw);
+  }
+ 
+  .text > h3 {
+    font-size: calc(-13.71429px + 14.28571vw);
+  }
+  .left>p{
+    width: 90%;
+    font-size: 16px;
+  }
+} */
+
+.home-section {
+  width: 100vw;
+  height: 91vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-container {
+  width: 97vw;
+  height: 85vh;
+  background-color: #1d1d1d;
+  border-radius: 29px;
+  overflow: hidden;
+}
+.even-columns-one {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: 1fr 1fr;
+}
+.left {
+  /* background-color: rgb(255, 81, 81); */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+/* .right {
+} */
+
+.home-bt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+.h2-after::after {
+  content: "by";
+  font-size: 30px;
+}
+
+.text {
+  width: 100%;
+  height: fit-content;
+  background-image: url(https://media2.giphy.com/media/HkEDr0jVekaZO/giphy.gif?cid=790b761…&ct=g&rid=giphy.gif);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* font-family: "Rammetto One", sans-serif; */
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text > .h2-after,
+.u {
+  /* padding: 0;
+  margin: 0; */
+  height: fit-content;
+  width: fit-content;
+  line-height: 1;
+  font-weight: 800;
+  font-size: 100px;
+}
+/* .text>.u{
+  text-decoration:  white wavy underline;
+
+} */
+.left > p {
+  font-size: 19px;
+  width: 70%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.stars {
+  width: 150px;
+  overflow: hidden;
+  height: 100px;
+  object-fit: cover;
+}
+.homemaintwo {
+  object-fit: cover;
+  width: 680px;
+  height: 680px;
+}
+
+@media (max-width: 1300px) {
+  .even-columns-one {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text > h2 {
+    font-size: calc(-13.71429px + 14.28571vw);
+  }
+
+  .text > .h2 , .u {
+    font-size: calc(-13.71429px + 14.28571vw);
+  }
+  .left > p {
+    width: 90%;
+    font-size: 16px;
+  }
+  .right {
+    display: none;
+  }
+  .text {
+    margin-top: 120px;
+  }
+}

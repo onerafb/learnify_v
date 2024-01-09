@@ -1,0 +1,119 @@
+.modal-container {
+  --max-width: 95vw;
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
+  background-color: #c6cdff;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  margin-top: 9vh;
+  position: fixed;
+  inset: 0;
+  padding: 1rem;
+}
+.modal-close-bt {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal-choose::file-selector-button {
+  background-color: var(--black);
+  padding: 5px 9px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: outfit;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+.video-modal-div {
+  width: 200px;
+  height: 110px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.video-modal {
+  width: 200px;
+  height: 110px;
+}
+.m-v-div {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  /* border: 1px solid black; */
+  gap: 15px;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+.h-black-h3 {
+  text-decoration: rgb(6, 6, 6) wavy underline;
+}
+.modal-h4-dec {
+  text-decoration: black underline;
+}
+.modal-left {
+  overflow-y: auto;
+  margin-bottom: 5px;
+  /* border: 1px solid black; */
+}
+@media (max-width: 1000px) {
+  .modal-left {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+  }
+  .modal-right {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .a-c-bt {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-left {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  border-bottom: 1px solid black;
+
+  }
+  .modal-right {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .video-modal-div {
+    width: 100px;
+    height: 70px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .video-modal {
+    width: 100px;
+    height: 70px;
+  }
+}

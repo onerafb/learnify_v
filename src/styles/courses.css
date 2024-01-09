@@ -1,0 +1,63 @@
+:root {
+  --btn-clr: #7c75fa;
+  --black: black;
+  --black-feint: rgb(58, 58, 58);
+  --white: white;
+  --off-white: rgb(220, 220, 220);
+  --disabled: rgb(191, 119, 255);
+}
+.courses-image {
+  min-width: 270px;
+  height: 160px;
+  border: 1px solid var(--black);
+  object-fit: cover;
+}
+.course-link {
+  padding: 0;
+}
+.courses-three {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  /* background-color: aqua; */
+  width: 100%;
+  padding: 10px;
+}
+.mgbt {
+  margin-bottom: 60px;
+}
+.courses-auto-x {
+  /* overflow-x: auto; */
+  width: 290px;
+}
+
+.courses-three::-webkit-scrollbar {
+  width: 12px;
+  height: 15px;
+}
+
+.courses-three::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+.courses-three::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+@media (max-width: 768px) {
+  .courses-image {
+    min-width: 230px;
+    height: 150px;
+  }
+  .courses-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    gap: 30px;
+    /* background-color: aqua; */
+    width: 100%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,147 @@
+.profile-img {
+  overflow: hidden;
+  /* background-color: rgb(144, 142, 139); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img > img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.even-columns-profile {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.user-info {
+  /* background-color: rgb(166, 200, 255); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.user-info-div-four {
+  display: flex;
+}
+.user-info-div-five {
+  display: flex;
+  gap: 5px;
+}
+
+.profile-user-info-p-one {
+  display: inline;
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile-user-info-p-two {
+  display: inline;
+  font-size: 18px;
+}
+.no-border-bottom-link {
+  border-bottom: none;
+}
+/* .profile-playlist-div {
+  background-color: yellow;
+} */
+.profile-playlist-div-sub {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  gap: 10px;
+}
+.profile-playlist-div-sub-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.watchlater-poster {
+  height: 150px;
+  min-width: 230px;
+  border: 1px solid black;
+  overflow: hidden;
+  object-fit: cover;
+}
+.profile-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.course-link-button {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: cursive;
+  background: transparent;
+  text-decoration: underline;
+}
+.course-link-reactdom {
+  border-bottom: none;
+}
+.invisible-div{
+  visibility: hidden;
+}
+@media (max-width: 1000px) {
+  .even-columns-profile {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .profile-img {
+    overflow: hidden;
+    /* background-color: rgb(144, 142, 139); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-playlist-div-sub {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .profile-img {
+    overflow: hidden;
+    /* background-color: rgb(144, 142, 139); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .watchlater-poster {
+    height: 200px;
+    min-width: 280px;
+    border: 1px solid black;
+    overflow: hidden;
+    object-fit: cover;
+  }
+}
+@media (max-width: 500px) {
+  .profile-playlist-div-sub {
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .watchlater-poster {
+    height: 200px;
+    min-width: 280px;
+    border: 1px solid black;
+    overflow: hidden;
+    object-fit: cover;
+  }
+}
