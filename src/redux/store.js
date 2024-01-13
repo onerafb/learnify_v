@@ -17,4 +17,4 @@ const store = configureStore({
   },
 });
 export default store;
-export const server = "https://learnify-vd2o.onrender.com/api/v1";
+export const server = "https://learnify-local-server.onrender.com/api/v1";
